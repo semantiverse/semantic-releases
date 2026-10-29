@@ -1,6 +1,9 @@
 # Semantic releases
 
-Public binary releases and release notes for Semantic, a schema-driven semantic database.
+Semantic is a self-hosted workspace for your documents, files, tasks, and AI agents.
+Organize your information and work with coding agents such as Claude Code and Codex in one place.
+
+This repository contains public binary releases and release notes.
 
 [Download the latest release](https://github.com/semantiverse/semantic-releases/releases/latest)
 or browse [all releases](https://github.com/semantiverse/semantic-releases/releases).
