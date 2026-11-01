@@ -9,6 +9,24 @@ This repository contains public binary releases and release notes.
 or browse [all releases](https://github.com/semantiverse/semantic-releases/releases).
 Each release lists its available platforms. The initial v0.0.1 release is Linux x86_64.
 
+## Install with mise
+
+On Linux x86_64, use [mise](https://mise.jdx.dev/) with its
+[`github:` source](https://mise.jdx.dev/dev-tools/backends/github.html):
+
+```sh
+mise use --global 'github:semantiverse/semantic-releases[asset_pattern=semantic-v*-x86_64-unknown-linux-gnu.tar.gz]@latest'
+semantic --version
+```
+
+Activate mise in your shell as described in its [setup guide](https://mise.jdx.dev/getting-started.html).
+Replace `@latest` with `@0.0.2` to pin a release. Omit `--global` to save the
+selection in the current project's `mise.toml` instead.
+
+The asset pattern selects the application archive, which includes the sandbox
+helper and license notices. Current releases provide Linux x86_64 binaries;
+the same runtime requirements below apply when installing with mise.
+
 ## Install and verify
 
 Download the binary archive for your platform and `SHA256SUMS` from the same release.
